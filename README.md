@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built with pure **HTML, CSS, and JavaScript** — no frameworks, no dependencies.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://your-live-link-here.vercel.app)
+[![Live Demo][(https://portfoliovisualizer-sigma.vercel.app/)]
 [![GitHub](https://img.shields.io/badge/GitHub-mitraaa--cmd-1a1a2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mitraaa-cmd)
 
 ---
