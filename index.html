@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Mitra Sarkar — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Background -->
+<div class="bg-canvas">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- ─── NAVBAR ─── -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="nav-logo">MITRA.</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire">Hire Me</a>
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="nav-link" onclick="closeMobileMenu()">Home</a>
+  <a href="#projects" class="nav-link" onclick="closeMobileMenu()">Projects</a>
+  <a href="#skills" class="nav-link" onclick="closeMobileMenu()">Skills</a>
+  <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMobileMenu()">Hire Me</a>
+</div>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-badge fade-up">
+          <span class="dot"></span>
+          Available for Internship · 2026
+        </div>
+        <h1 class="hero-title fade-up" style="animation-delay:0.1s">
+          Hi, I'm<br><span class="name">Mitra Sarkar</span>
+        </h1>
+        <p class="hero-sub fade-up" style="animation-delay:0.2s">
+          B.Tech CSE Student &nbsp;·&nbsp; Web Developer &nbsp;·&nbsp; AI Enthusiast
+        </p>
+        <p class="hero-desc fade-up" style="animation-delay:0.3s">
+          I build innovative applications at the intersection of design and technology — from AI-powered systems to polished websites. Currently hacking on ideas and competing in hackathons.
+        </p>
+        <div class="hero-cta fade-up" style="animation-delay:0.4s">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Contact Me
+          </a>
+        </div>
+        <div class="hero-stats fade-up" style="animation-delay:0.5s">
+          <div class="stat-item">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Hackathons</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2+</div>
+            <div class="stat-label">Years Coding</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — Avatar -->
+      <div class="hero-visual fade-up" style="animation-delay:0.3s">
+        <div class="avatar-frame">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring-inner"></div>
+          <div class="avatar-core">
+            <div class="avatar-illustration">
+              <div class="avatar-bg-glow"></div>
+              <div class="avatar-person">
+                <!-- SVG Girl Developer Illustration -->
+                <svg width="240" height="260" viewBox="0 0 240 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Shadow -->
+                  <ellipse cx="120" cy="270" rx="80" ry="30" fill="rgba(99,102,241,0.15)"/>
+                  <!-- Torso — fitted top -->
+                  <path d="M82 158 Q78 165 76 200 L76 250 L164 250 L164 200 Q162 165 158 158 Q140 172 120 172 Q100 172 82 158Z" fill="#6366F1"/>
+                  <!-- Neckline detail -->
+                  <path d="M100 158 Q120 174 140 158" stroke="#4f46e5" stroke-width="2" fill="none"/>
+                  <!-- Arms -->
+                  <path d="M82 162 Q60 170 52 210 Q50 222 58 226 Q68 230 72 215 Q76 195 84 178Z" fill="#c8967e"/>
+                  <path d="M158 162 Q180 170 188 210 Q190 222 182 226 Q172 230 168 215 Q164 195 156 178Z" fill="#c8967e"/>
+                  <!-- Hands -->
+                  <ellipse cx="60" cy="228" rx="13" ry="9" fill="#c8967e"/>
+                  <ellipse cx="180" cy="228" rx="13" ry="9" fill="#c8967e"/>
+                  <!-- Laptop base -->
+                  <rect x="65" y="222" width="110" height="6" rx="3" fill="#0f172a" opacity="0.8"/>
+                  <rect x="72" y="212" width="96" height="14" rx="4" fill="#1e293b"/>
+                  <!-- Skirt / bottom -->
+                  <path d="M76 210 Q75 250 68 260 L172 260 Q165 250 164 210Z" fill="#4f46e5" opacity="0.6"/>
+                  <!-- Neck -->
+                  <rect x="109" y="132" width="22" height="28" rx="6" fill="#c8967e"/>
+                  <!-- Head -->
+                  <ellipse cx="120" cy="108" rx="44" ry="46" fill="#c8967e"/>
+                  <!-- Long hair — back layer -->
+                  <path d="M76 95 Q74 58 120 55 Q166 58 164 95 Q162 68 120 66 Q78 68 76 95Z" fill="#1a0a3c"/>
+                  <!-- Long hair — sides flowing down -->
+                  <path d="M76 95 Q68 110 66 140 Q68 165 74 180 Q78 190 80 195 Q76 170 78 150 Q80 125 80 108Z" fill="#1a0a3c"/>
+                  <path d="M164 95 Q172 110 174 140 Q172 165 166 180 Q162 190 160 195 Q164 170 162 150 Q160 125 160 108Z" fill="#1a0a3c"/>
+                  <!-- Hair top -->
+                  <path d="M76 95 Q74 55 120 52 Q166 55 164 95 Q158 68 120 65 Q82 68 76 95Z" fill="#2d1b69"/>
+                  <!-- Hair parting highlight -->
+                  <path d="M120 55 Q118 70 116 85" stroke="#3d2b7a" stroke-width="2" fill="none" opacity="0.5"/>
+                  <!-- Eyes -->
+                  <ellipse cx="105" cy="108" rx="7" ry="7.5" fill="#1a1a2e"/>
+                  <ellipse cx="135" cy="108" rx="7" ry="7.5" fill="#1a1a2e"/>
+                  <ellipse cx="106.5" cy="106" rx="2.5" ry="3" fill="#fff" opacity="0.85"/>
+                  <ellipse cx="136.5" cy="106" rx="2.5" ry="3" fill="#fff" opacity="0.85"/>
+                  <!-- Eyelashes left -->
+                  <path d="M98 103 Q100 100 102 102" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <path d="M100 101 Q103 99 104 101" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <path d="M104 100 Q106 99 107 101" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <!-- Eyelashes right -->
+                  <path d="M128 101 Q130 99 132 101" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <path d="M132 100 Q134 99 136 101" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <path d="M136 101 Q138 100 140 103" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <!-- Blush -->
+                  <ellipse cx="95" cy="118" rx="9" ry="5" fill="rgba(251,146,60,0.25)"/>
+                  <ellipse cx="145" cy="118" rx="9" ry="5" fill="rgba(251,146,60,0.25)"/>
+                  <!-- Smile -->
+                  <path d="M109 126 Q120 135 131 126" stroke="#a0765e" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  <!-- Glasses -->
+                  <rect x="96" y="103" width="20" height="13" rx="6" stroke="#6366F1" stroke-width="2" fill="rgba(99,102,241,0.1)"/>
+                  <rect x="124" y="103" width="20" height="13" rx="6" stroke="#6366F1" stroke-width="2" fill="rgba(99,102,241,0.1)"/>
+                  <line x1="116" y1="109" x2="124" y2="109" stroke="#6366F1" stroke-width="1.5"/>
+                  <!-- Earrings — drop style -->
+                  <circle cx="76" cy="113" r="3" fill="#8B5CF6"/>
+                  <line x1="76" y1="116" x2="76" y2="122" stroke="#8B5CF6" stroke-width="1.5"/>
+                  <circle cx="76" cy="123" r="2.5" fill="#c4b5fd"/>
+                  <circle cx="164" cy="113" r="3" fill="#8B5CF6"/>
+                  <line x1="164" y1="116" x2="164" y2="122" stroke="#8B5CF6" stroke-width="1.5"/>
+                  <circle cx="164" cy="123" r="2.5" fill="#c4b5fd"/>
+                  <!-- Hair accessory / star clip -->
+                  <circle cx="148" cy="70" r="5" fill="#f472b6" opacity="0.9"/>
+                  <text x="145" y="74" fill="#fff" font-size="7">✦</text>
+                  <!-- Laptop screen glow -->
+                  <ellipse cx="120" cy="200" rx="55" ry="10" fill="rgba(99,102,241,0.08)" opacity="0.5"/>
+                  <!-- Code on top -->
+                  <text x="90" y="188" fill="rgba(255,255,255,0.6)" font-size="8" font-family="monospace">&lt;/dev&gt;</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- Floating cards -->
+          <div class="float-card float-card-1">
+            <div class="float-icon">⚡</div>
+            <div>
+              <div class="stat-num">Flutter</div>
+              <div class="stat-lbl">Dev</div>
+            </div>
+          </div>
+          <div class="float-card float-card-2">
+            <div class="float-icon">🤖</div>
+            <div>
+              <div class="stat-num">AI/ML</div>
+              <div class="stat-lbl">Enthusiast</div>
+            </div>
+          </div>
+          <div class="float-card float-card-3">
+            <div class="float-icon">🎨</div>
+            <div>
+              <div class="stat-num">UI/UX</div>
+              <div class="stat-lbl">Designer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ─── MARQUEE ─── -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Flutter<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Python<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">AI / ML<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">C++<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">UI/UX Design<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">GitHub<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Hackathons<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">HTML / CSS<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Flutter<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Python<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">AI / ML<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">C++<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">UI/UX Design<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">GitHub<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Hackathons<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">HTML / CSS<span class="marquee-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- ─── SKILLS ─── -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Skills & Technologies</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M12.001 3L20.385 7.5V16.5L12.001 21L3.617 16.5V7.5L12.001 3Z" fill="#6366F1" opacity="0.3"/>
+            <path d="M12.001 3L20.385 7.5V16.5L12.001 21L3.617 16.5V7.5L12.001 3Z" stroke="#6366F1" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M8 9L12 12L16 9M12 12V17" stroke="#a5b4fc" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-name">Flutter</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="#8B5CF6" opacity="0.2" stroke="#8B5CF6" stroke-width="1.5"/>
+            <path d="M8 8l4 8 4-8M8 12h8" stroke="#c4b5fd" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-name">C++</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#6366F1" opacity="0.2"/>
+            <path d="M12 6v6l4 2" stroke="#a5b4fc" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="2" fill="#6366F1"/>
+          </svg>
+        </div>
+        <span class="skill-name">Python</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4l16 0M4 9l8 0M4 14l12 0M4 19l6 0" stroke="#f97316" stroke-width="2" stroke-linecap="round"/>
+            <rect x="14" y="14" width="7" height="6" rx="1" fill="#f97316" opacity="0.3" stroke="#f97316" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <span class="skill-name">HTML</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="#06b6d4" stroke-width="1.5" fill="#06b6d4" opacity="0.15"/>
+            <path d="M12 7v10M7 12h10" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="12" cy="12" r="2.5" fill="#06b6d4"/>
+          </svg>
+        </div>
+        <span class="skill-name">CSS</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="3" fill="#f97316" stroke="#f97316" stroke-width="1.5"/>
+            <path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.636 5.636l1.414 1.414M16.95 16.95l1.414 1.414M5.636 18.364l1.414-1.414M16.95 7.05l1.414-1.414" stroke="#f97316" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-name">Git</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="skill-name">GitHub</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="skill-name">AI / ML</span>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="18" height="18" rx="3" fill="#6366F1" opacity="0.2" stroke="#6366F1" stroke-width="1.5"/>
+            <circle cx="9" cy="9" r="2" fill="#6366F1"/>
+            <circle cx="15" cy="15" r="2" fill="#8B5CF6"/>
+            <path d="M9 15h6M9 12h6" stroke="#a5b4fc" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="skill-name">UI/UX Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-divider fade-up">
+      <div class="divider-line"></div>
+      <div class="section-label" style="margin-bottom:0">Featured Work</div>
+      <div class="divider-line"></div>
+    </div>
+    <h2 class="section-title fade-up">Selected Projects</h2>
+
+    <div class="projects-grid">
+      <!-- ── Project 1 ── -->
+      <div class="project-card fade-up">
+        <div class="project-thumb thumb-recipe">
+          <div class="project-thumb-inner">
+            <div class="recipe-ui">
+              <div class="recipe-header">
+                <div class="recipe-avatar"></div>
+                <div class="recipe-title-bar"></div>
+              </div>
+              <div class="recipe-chips">
+                <div class="chip">⚡ Bubble</div>
+                <div class="chip">🔀 Merge</div>
+                <div class="chip">🔍 Quick</div>
+                <div class="chip">▶ Run</div>
+              </div>
+              <div class="recipe-cards">
+                <div class="recipe-mini-card rmc-1"></div>
+                <div class="recipe-mini-card rmc-2"></div>
+                <div class="recipe-mini-card rmc-3"></div>
+                <div class="recipe-mini-card rmc-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Web App</span>
+          <h3 class="project-name">Sorting Visualizer</h3>
+          <p class="project-desc">An interactive, AI-themed sorting visualizer built using HTML, CSS, and JavaScript. Understand sorting algorithms through dynamic bar animations, speed control, and dark/light theme toggle.</p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://sorting-playground.vercel.app/" target="_blank" class="btn-view">
+              View
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 2 ── -->
+      <div class="project-card fade-up">
+        <div class="project-thumb thumb-traffic">
+          <div class="project-thumb-inner">
+            <div class="traffic-ui">
+              <div class="traffic-scan"></div>
+              <div class="traffic-grid-lines"></div>
+              <div class="traffic-boxes">
+                <div class="t-box t-box-1">Temp</div>
+                <div class="t-box t-box-2">Wind</div>
+                <div class="t-box t-box-3">Risk</div>
+              </div>
+              <div class="traffic-bottom">
+                <div class="traffic-stat"><div class="t-dot"></div>ML Model</div>
+                <div class="traffic-stat" style="color:rgba(251,191,36,0.9)"><div class="t-dot"></div>Algeria</div>
+                <div class="traffic-stat" style="color:rgba(239,68,68,0.9)"><div class="t-dot"></div>High Risk</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">AI / ML</span>
+          <h3 class="project-name">Algerian Forest Fire Prediction System</h3>
+          <p class="project-desc">A full-stack Machine Learning web application that predicts the risk of forest fires in Algeria based on meteorological data.</p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">ML</span>
+            </div>
+            <a href="https://github.com/SpideyX-spec/Forest-fire-prediction" target="_blank" class="btn-view">
+              View
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 3 ── -->
+      <div class="project-card fade-up">
+        <div class="project-thumb thumb-dashboard">
+          <div class="project-thumb-inner">
+            <div class="dash-ui">
+              <div class="dash-header">
+                <div class="dash-title">⚡ AdminBoard</div>
+                <div class="dash-dots">
+                  <div class="dash-dot" style="background:#ef4444"></div>
+                  <div class="dash-dot" style="background:#f59e0b"></div>
+                  <div class="dash-dot" style="background:#22c55e"></div>
+                </div>
+              </div>
+              <div class="dash-charts">
+                <div class="dash-bar-chart">
+                  <div class="bar" style="height:40%"></div>
+                  <div class="bar" style="height:65%"></div>
+                  <div class="bar" style="height:50%"></div>
+                  <div class="bar" style="height:80%"></div>
+                  <div class="bar" style="height:60%"></div>
+                  <div class="bar" style="height:90%"></div>
+                </div>
+                <div class="dash-progress">
+                  <div class="prog-row">
+                    <div class="prog-label">Projects</div>
+                    <div class="prog-track"><div class="prog-fill" style="width:85%"></div></div>
+                  </div>
+                  <div class="prog-row">
+                    <div class="prog-label">Tasks</div>
+                    <div class="prog-track"><div class="prog-fill" style="width:70%"></div></div>
+                  </div>
+                  <div class="prog-row">
+                    <div class="prog-label">Reports</div>
+                    <div class="prog-track"><div class="prog-fill" style="width:55%"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="dash-list">
+                <div class="dash-item">
+                  <div class="dash-item-dot" style="background:#22c55e"></div>
+                  <div class="dash-item-line"></div>
+                  <div class="dash-badge" style="background:rgba(34,197,94,0.2);color:#4ade80">Done</div>
+                </div>
+                <div class="dash-item">
+                  <div class="dash-item-dot" style="background:#6366F1"></div>
+                  <div class="dash-item-line"></div>
+                  <div class="dash-badge" style="background:rgba(99,102,241,0.2);color:#a5b4fc">Live</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Web App</span>
+          <h3 class="project-name">Admin Dashboard</h3>
+          <p class="project-desc">A responsive Admin Dashboard built using HTML, CSS, and JavaScript. Provides a clean UI for managing projects, tasks, reports, and settings with interactive charts and a modern layout.</p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://admin-dashboard-tau-tawny-ub60ipibwa.vercel.app/" target="_blank" class="btn-view">
+              View
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <!-- LEFT -->
+      <div class="fade-up">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="contact-headline">
+          Let's Build Something<br>
+          <span>Amazing Together</span>
+        </h2>
+        <p class="contact-text">
+          I'm currently open to UI/UX internship opportunities and exciting collaborations. Whether you have a project in mind or just want to connect — my inbox is always open.
+        </p>
+        <div class="about-strip">
+          <div class="about-pill">
+            <span class="about-pill-icon">📍</span>
+            West Bengal, India
+          </div>
+          <div class="about-pill">
+            <span class="about-pill-icon">🕐</span>
+            IST · UTC+5:30
+          </div>
+          <div class="about-pill">
+            <span class="about-pill-icon">✅</span>
+            Open to Work
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT — Contact Card -->
+      <div class="contact-card fade-up">
+        <div class="contact-links">
+          <a href="mailto:mitra.sarkar@email.com" class="contact-link-item">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-link-text">
+              <strong>Email Me</strong>
+              <span>mitra.sarkar@email.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-link-item">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-link-text">
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/mitrasarkar</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-link-item">
+            <div class="contact-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div class="contact-link-text">
+              <strong>GitHub</strong>
+              <span>github.com/mitrasarkar</span>
+            </div>
+          </a>
+        </div>
+        <div class="contact-cta">
+          <a href="mailto:mitrasarkar06@email.com" class="btn btn-primary">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">MITRA.</div>
+        <div class="footer-copy" style="margin-top:6px">© 2026 Mitra Sarkar.</div>
+      </div>
+      <div class="footer-copy" style="color:var(--text-muted)">B.Tech CSE · AI/ML · UI/UX</div>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Twitter/X">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
