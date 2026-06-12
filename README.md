@@ -2,7 +2,7 @@
 
 A modern, responsive developer portfolio built with pure **HTML, CSS, and JavaScript** — no frameworks, no dependencies.
 
-[![Live Demo][(https://portfoliovisualizer-sigma.vercel.app/)]
+[![Live Demo](https://img.shields.io/badge/Live-Demo-6366F1?style=for-the-badge&logo=vercel&logoColor=white)](https://portfoliovisualizer-sigma.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-mitraaa--cmd-1a1a2e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mitraaa-cmd)
 
 ---
@@ -79,4 +79,3 @@ Then open `index.html` in your browser, or use Live Server in VS Code.
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
